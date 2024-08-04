@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🧜‍♂🌪 | ❤‍🔥Abdallah☠️]";
+const doNotDelete = "🎯 ⚘❥Obtimus ✿🎯";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -13,26 +13,23 @@ const doNotDelete = "[ 🧜‍♂🌪 | ❤‍🔥Abdallah☠️]";
 module.exports = {
 	config: {
 		name: "help",
+    aliases: ["sahayog"],
 		version: "1.17",
-		author: "𝚃𝚒𝚝𝚞𝚜",
+		author: "NTKhang",
 		countDown: 5,
 		role: 0,
 		shortDescription: {
-			vi: "Xem cách dùng lệnh",
+			vi: "",
 			en: "View command usage"
 		},
 		longDescription: {
-			vi: "Xem cách sử dụng của các lệnh",
+			vi: "",
 			en: "View command usage"
 		},
 		category: "info",
 		guide: {
-			vi: "   {pn} [để trống | <số trang> | <tên lệnh>]"
-				+ "\n   {pn} <command name> [-u | usage | -g | guide]: chỉ hiển thị phần hướng dẫn sử dụng lệnh"
-				+ "\n   {pn} <command name> [-i | info]: chỉ hiển thị phần thông tin về lệnh"
-				+ "\n   {pn} <command name> [-r | role]: chỉ hiển thị phần quyền hạn của lệnh"
-				+ "\n   {pn} <command name> [-a | alias]: chỉ hiển thị phần tên viết tắt của lệnh",
-			en: "{pn} [empty ✰ <𝙽𝚞𝚖𝚎́𝚛𝚘 𝚍𝚞 𝚙𝚊𝚐𝚎> ➫ <command name>]"
+			vi: "",
+			en: "{pn} [empty | <page number> | <command name>]"
 				+ "\n   {pn} <command name> [-u | usage | -g | guide]: only show command usage"
 				+ "\n   {pn} <command name> [-i | info]: only show command info"
 				+ "\n   {pn} <command name> [-r | role]: only show command role"
@@ -42,32 +39,16 @@ module.exports = {
 	},
 
 	langs: {
-		vi: {
-			help: "╭─────────────⭓\n%1\n├─────⭔\n│ Trang [ %2/%3 ]\n│ Hiện tại bot có %4 lệnh có thể sử dụng\n│ » Gõ %5help <số trang> để xem danh sách các lệnh\n│ » Gõ %5help để xem chi tiết cách sử dụng lệnh đó\n├────────⭔\n│ %6\n╰─────────────⭓",
-			help2: "%1├───────⭔\n│ » Hiện tại bot có %2 lệnh có thể sử dụng\n│ » Gõ %3help <tên lệnh> để xem chi tiết cách sử dụng lệnh đó\n│ %4\n╰─────────────⭓",
-			commandNotFound: "Lệnh \"%1\" không tồn tại",
-			getInfoCommand: "╭── NAME ────⭓\n│ %1\n├── INFO\n│ Mô tả: %2\n│ Các tên gọi khác: %3\n│ Các tên gọi khác trong nhóm bạn: %4\n│ Version: %5\n│ Role: %6\n│ Thời gian mỗi lần dùng lệnh: %7s\n│ Author: %8\n├── Usage\n│%9\n├── Notes\n│ Nội dung bên trong <XXXXX> là có thể thay đổi\n│ Nội dung bên trong [a|b|c] là a hoặc b hoặc c\n╰──────⭔",
-			onlyInfo: "╭── INFO ────⭓\n│ Tên lệnh: %1\n│ Mô tả: %2\n│ Các tên gọi khác: %3\n│ Các tên gọi khác trong nhóm bạn: %4\n│ Version: %5\n│ Role: %6\n│ Thời gian mỗi lần dùng lệnh: %7s\n│ Author: %8\n╰─────────────⭓",
-			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰─────────────⭓",
-			onlyAlias: "╭── ALIAS ────⭓\n│ Các tên gọi khác: %1\n│ Các tên gọi khác trong nhóm bạn: %2\n╰─────────────⭓",
-			onlyRole: "╭── ROLE ────⭓\n│%1\n╰─────────────⭓",
-			doNotHave: "Không có",
-			roleText0: "0 (Tất cả người dùng)",
-			roleText1: "1 (Quản trị viên nhóm)",
-			roleText2: "2 (Admin bot)",
-			roleText0setRole: "0 (set role, tất cả người dùng)",
-			roleText1setRole: "1 (set role, quản trị viên nhóm)",
-			pageNotFound: "Trang %1 không tồn tại"
-		},
+		vi:"",
 		en: {
-			help: "┏━━━━━━━━━┓\n┃⟮𓄿Abdallah 𝙱𝙾𝚃𓅛⟯┃\n┗━━━━━━━━━┛\n➠%1\n├─────⛁\n│ 𝙿𝙰𝙶𝙴𝚂 ➣ ❰ %2/%3 ❱\n│ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝙴𝚂 ➢ ❰ %4 ❱\n│ » 𝐭𝐚𝐩𝐞𝐳 ￫%5help￩ <page> 𝙿𝚘𝚞𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚘𝚖𝚍𝚜\n│ » 𝚝𝚊𝚙𝚎𝚣 ￫%5help￩ 𝚙𝚘𝚞𝚛 𝚙𝚕𝚞𝚜 𝚍'𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗\n\n┏━━━━━━━━━━━┓\n 𝚏𝚒𝚊𝚗𝚝𝚘𝚝27@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖     \n┗━━━━━━━━━━━┛\n𝐍𝐨𝐦: ☆𝐅𝐢𝐚𝐧𝐭𝐨 𝐓𝐢𝐭𝐮𝐬☆🪶\n🍆𝐅𝐁: www.facebook.com/100089877583784\n⛁────────✰\n│ %6\n╰────⟮𝚃𝚒𝚝𝚞𝚜⟯────⛁",
-			help2: "┏━━━━━━━━┓\n┃𓅜Abdallah 𝙱𝚘𝚝𓅛 ┃\n┗━━━━━━━━┛ %1 ✰\n│ ➢ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦: ❰%2❱\n│ ➢ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚎𝚜: 𝚃𝚊𝚙𝚎𝚣 %3help <command name> 𝐩𝐨𝐮𝐫 𝐜𝐨𝐦𝐩𝐫𝐞𝐧𝐝𝐫𝐞 𝐥𝐞 𝐟𝐨𝐧𝐜𝐭𝐢𝐨𝐧𝐧𝐞𝐦𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞\n\n➢ 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚙𝚎𝚞𝚛:\n🍆 𝗡𝗢𝗠: ✰𝙵𝚊𝚗𝚝𝚘 𝚃𝚒𝚝𝚞𝚜✰🪶\n🍆 𝗙𝗕: www.facebook.com/100089877583784\n│ %4\n╰────𝗗/𝙱𝚘𝚝─────☻",
+			help: "╭─────────────☠ \n%1\n├─────\n│ Page [ %2/%3 ]\n│ Total commands: %4 \n│ » Type %5help <page> to view the command list\n│ » Type %5help \n├────────☠\n│ %6\n╰─────────────☠",
+			help2: "%1╰──────────────────☠\n\n» Total commands : %2\n» Type : %3<command name>\n\n    %4",
 			commandNotFound: "Command \"%1\" does not exist",
-			getInfoCommand: "╭── ⅈ𝖓𝚏օ ────⭓\n│ 𝐍𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝: %1\n│ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: %2\n│ 𝐍𝐨𝐦𝐬: %3\n│ 𝐍𝐨𝐦𝐬 𝐝𝐚𝐧𝐬 𝐥𝐞𝐬 𝐠𝐫𝐨𝐮𝐩𝐞𝐬: %4\n│ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: %5\n│ 𝐑𝐨𝐥𝐞: %6\n│ 𝐓𝐞𝐦𝐩𝐬 𝐝'𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧: %7s\n│ Author: %8\n╰─────────────⭓",
-			onlyInfo: "╭── INFO ────⭓\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────⭓",
-			onlyUsage: "╭── USAGE ────⭓\n│%1\n╰─────────────⭓",
-			onlyAlias: "╭── ALIAS ────⭓\n│ Other names: %1\n│ Other names in your group: %2\n╰─────────────⭓",
-			onlyRole: "╭── ROLE ────⭓\n│%1\n╰─────────────⭓",
+			getInfoCommand: "╭── NAME ────☠\n│ %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n│%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────☠",
+			onlyInfo: "╭── INFO ────☠\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────☠",
+			onlyUsage: "╭── USAGE ────☠\n│%1\n╰─────────────☠",
+			onlyAlias: "╭── ALIAS ────☠\n│ Other names: %1\n│ Other names in your group: %2\n╰─────────────☠",
+			onlyRole: "╭── ROLE ────☠\n│%1\n╰─────────────☠",
 			doNotHave: "Do not have",
 			roleText0: "0 (All users)",
 			roleText1: "1 (Group administrators)",
@@ -146,8 +127,8 @@ module.exports = {
 				}
 				arrayInfo.sort((a, b) => (a.category < b.category ? -1 : 1));
 				arrayInfo.forEach((data, index) => {
-					const categoryUpcase = `${index == 0 ? `╭` : `├`}─── ${data.category.toUpperCase()} ${index == 0 ? "⭓" : "⭔"}`;
-					data.names = data.names.sort().map(item => item = `│ ${item}`);
+					const categoryUpcase = `${index == 0 ? `╭` : `╰───────────────☠\n╭`}──────☠〔 ${data.category.toUpperCase()} ${index == 0 ? "〕»" : "〕»"}`;
+					data.names = data.names.sort().map(item => item = `|  ☠ ${item}`);
 					msg += `${categoryUpcase}\n${data.names.join("\n")}\n`;
 				});
 				message.reply(getLang("help2", msg, commands.size, prefix, doNotDelete));
@@ -276,4 +257,4 @@ function cropContent(content, max) {
 		content = content + "...";
 	}
 	return content;
-}
+				}
