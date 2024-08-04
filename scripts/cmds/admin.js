@@ -34,13 +34,13 @@ module.exports = {
 			listAdmin: "👑 | Danh sách admin:\n%1"
 		},
 		en: {
-			added: "✅ | Added admin role for %1 users:\n%2",
-			alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
-			missingIdAdd: "⚠️ | Please enter ID or tag user to add admin role",
-			removed: "✅ | Removed admin role of %1 users:\n%2",
-			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
-			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: "👑 | List of admins:\n%1"
+			added: "✅ |☠ 𝑵𝒐𝒖𝒗𝒆𝒍𝒍𝒆 𝒎𝒊𝒔𝒔𝒊𝒐𝒏 𝒅'𝒂𝒅𝒎𝒊𝒏 𝒂𝒋𝒐𝒖𝒕𝒆́ ☠ %1 users:\n%2",
+			alreadyAdmin: "\n⚠️ | %1 users 𝑽𝒐𝒖𝒔 𝒆̂𝒕𝒆𝒔 𝒅𝒆́𝒋𝒂 𝒂𝒅𝒎𝒊𝒏 :\n%2",
+			missingIdAdd: "⚠️ | ☠𝑽𝒆𝒖𝒊𝒍𝒍𝒆𝒓 𝒂𝒋𝒐𝒖𝒕𝒆𝒓 𝒍'𝑰𝑫 𝒅𝒆 𝒍𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒏𝒆 ☠",
+			removed: "✅ | 𝑨𝒅𝒎𝒊𝒏 𝒃𝒂𝒏𝒏𝒊 of %1 users:\n%2",
+			notAdmin: "⚠️ | %1 ☠𝑻'𝒆𝒔 𝒑𝒂𝒔 𝒂𝒅𝒎𝒊𝒏 𝒅𝒖 𝒃𝒂𝒍𝒍𝒂𝒊𝒔 ☠:\n%2",
+			missingIdRemove: "⚠️ | 𝑽𝒆𝒖𝒊𝒍𝒍𝒆𝒓 𝒂𝒋𝒐𝒖𝒕𝒆𝒓 𝒍'𝒊𝒖𝒅 𝒅𝒆 𝒍𝒂 𝒑𝒆𝒓𝒔𝒐𝒏𝒏𝒆",
+			listAdmin: "☬⚡⚡⚡ | 𝑳𝒊𝒔𝒕𝒆 𝒅𝒆𝒔 𝒂𝒅𝒎𝒊𝒏𝒔:\n%1"
 		}
 	},
 
