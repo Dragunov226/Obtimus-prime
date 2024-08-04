@@ -3,7 +3,7 @@ const fs = require("fs");
 module.exports = {
   config: {
     name: "bank",
-    description: "🧞‍♂️𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐮 𝐝𝐚𝐧𝐬 𝐎𝐛𝐭𝐢𝐦𝐮𝐬 𝐛𝐚𝐧𝐤 𝐯𝐨𝐮𝐬 𝐩𝐨𝐮𝐯𝐞𝐳 𝐞𝐟𝐟𝐞𝐜𝐭𝐮𝐞𝐫 𝐮𝐧 𝐝𝐞𝐩𝐨𝐭 𝐨𝐮 𝐮𝐧 𝐫𝐞𝐭𝐫𝐚𝐢𝐭 🧞‍♂️",
+    description: "Deposit or withdraw money from the bank and earn interest",
     guide:{
       vi: "",
       en: "Bank:\nInterest - Balance\n - Withdraw \n- Deposit \n- Transfer \n- Richest"
@@ -192,11 +192,11 @@ case "payloan":
 
   fs.writeFileSync("bank.json", JSON.stringify(bankData));
 
-  return message.reply(`╔════ஜ۩۞۩ ஜ═══╗\n\n[🏦 Bank Bot 🏦]\n\n❏Successfully repaid ${amount}$ towards your loan.✅\n\nto check type:\n${p}bank balance\n\nAnd your current loan to pay: ${bankData[user].loan}$\n\n╚════ஜ۩۞۩ஜ═══╝`);
+  return message.reply(`╔════ஜ۩۞۩ஜ═══╗\n\n[🏦 Bank Bot 🏦]\n\n❏Successfully repaid ${amount}$ towards your loan.✅\n\nto check type:\n${p}bank balance\n\nAnd your current loan to pay: ${bankData[user].loan}$\n\n╚════ஜ۩۞۩ஜ═══╝`);
 			
         
 default:
-        return message.reply(`╔════ஜ۩۞۩ஜ═══╗\n\n===[🏦 🧞‍♂️ 𝐁𝐀𝐍𝐊 𝐎𝐛𝐭𝐢𝐦𝐮𝐬 𝐏𝐑𝐎𝐉𝐄𝐓 🧞‍♂️ 🏦]===\n\n𝐯𝐞𝐮𝐢𝐥𝐥𝐞𝐳 𝐮𝐭𝐢𝐥𝐢𝐬𝐞𝐫 →:\n❍  ${p}𝐁𝐚𝐧𝐤 𝐃𝐞𝐩𝐨𝐬𝐢𝐭\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐰𝐢𝐭𝐡𝐝𝐫𝐚𝐰\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐁𝐚𝐥𝐚𝐧𝐜𝐞\n❍  ${p}𝐁𝐚𝐧𝐤 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐑𝐢𝐜𝐡𝐞𝐬𝐭\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐋𝐨𝐚𝐧\n🧞‍♂️  ${p}𝐁𝐚𝐧𝐤 𝐏𝐚𝐲𝐋𝐨𝐚𝐧\n\n╚════ஜ۩۞۩ஜ═══╝`);
+        return message.reply(`╔════ஜ۩۞۩ஜ═══╗\n\n===[🏦 🧞‍♂️ 𝐁𝐀𝐍𝐊 𝐎𝐛𝐭𝐢𝐦𝐮𝐬 𝐏𝐑𝐎𝐉𝐄𝐓 🧞‍♂️ 🏦]===\n\n❏𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬:\n❍  ${p}𝐁𝐚𝐧𝐤 𝐃𝐞𝐩𝐨𝐬𝐢𝐭\n❍  ${p}𝐁𝐚𝐧𝐤 𝐰𝐢𝐭𝐡𝐝𝐫𝐚𝐰\n❍  ${p}𝐁𝐚𝐧𝐤 𝐁𝐚𝐥𝐚𝐧𝐜𝐞\n❍  ${p}𝐁𝐚𝐧𝐤 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭\n❍  ${p}𝐁𝐚𝐧𝐤 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫\n❍  ${p}𝐁𝐚𝐧𝐤 𝐑𝐢𝐜𝐡𝐞𝐬𝐭\n❍  ${p}𝐁𝐚𝐧𝐤 𝐋𝐨𝐚𝐧\n❍  ${p}𝐁𝐚𝐧𝐤 𝐏𝐚𝐲𝐋𝐨𝐚𝐧\n\n╚════ஜ۩۞۩ஜ═══╝`);
     }
   }
 };
