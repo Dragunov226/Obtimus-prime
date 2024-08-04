@@ -9,7 +9,7 @@ const Prefixes = [
   'ask',
 
   'gpt',
-  'maureen',
+  'Obtimus',
 
   'openai',
 
@@ -73,7 +73,7 @@ module.exports = {
 
     if (!question) {
 
-      return message.reply("𝙃𝙞 𝙄'𝙢 ☸۝O🧞btimus🧞۝virt𝙪𝙖𝙡 𝙖𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩. 𝙒𝙝𝙖𝙩 𝙘𝙖𝙣 𝙞 𝙙𝙤 𝙛𝙤𝙧 𝙮𝙤𝙪 ?🤓");
+      return message.reply("𝑆𝑎𝑙𝑢𝑡!!!! 𝑗𝑒 𝑠𝑢𝑖𝑠 𝑂𝑏𝑡𝑖𝑚𝑢𝑠 𝑃𝑟𝑖𝑚𝑒 𝑎̀ 𝑣𝑜𝑠 𝑠𝑒𝑟𝑣𝑖𝑐𝑒𝑠 🧞‍♂️ ");
 
     }
 
@@ -119,7 +119,7 @@ module.exports = {
 
 
 
-      const replyMessage = await message.reply(`❔𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━\n\n✅ 𝗔𝗻𝘀𝘄𝗲𝗿: ${answer}\n\n━━━━━━━━━━━━━\n𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗧𝗶𝗺𝗲: ${processTimeSec} seconds`);
+      const replyMessage = await message.reply(`❔𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${question}\n━━━━━━━━━━━━━\n\n✅ 𝐑𝐞𝐩𝐨𝐧𝐬𝐞: ${answer}\n\n━━━━━━━━━━━━━\n𝐃𝐮𝐫𝐞́𝐞 𝐝𝐞 𝐥𝐚 𝐫𝐞𝐜𝐡𝐞𝐫𝐜𝐡𝐞: ${processTimeSec} seconds`);
 
 
 
@@ -135,7 +135,7 @@ module.exports = {
 
 
 
-      api.setMessageReaction("✅", event.messageID, () => {}, true);
+      api.setMessageReaction("🧞‍♂️", event.messageID, () => {}, true);
 
 
 
@@ -263,7 +263,7 @@ module.exports = {
 
 
 
-      const followUpMessage = await message.reply(`❔𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${userReply}\n━━━━━━━━━━━━━\n\n✅ 𝗔𝗻𝘀𝘄𝗲𝗿: ${followUpResponse}\n\n━━━━━━━━━━━━━\n𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗧𝗶𝗺𝗲: ${processTimeSec} seconds`);
+      const followUpMessage = await message.reply(`❔𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻: ${userReply}\n━━━━━━━━━━━━━\n\n✅ 𝐑𝐞𝐩𝐨𝐧𝐬𝐞: ${followUpResponse}\n\n━━━━━━━━━━━━━\n𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗧𝗶𝗺𝗲: ${processTimeSec} seconds`);
 
 
 
