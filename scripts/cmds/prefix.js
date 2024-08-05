@@ -45,7 +45,7 @@ module.exports = {
                         confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
                         successGlobal: "Changed prefix of system bot to: %1",
                         successThisThread: "Changed prefix in your box chat to: %1",
-                        myPrefix: "𝐻𝑒𝑙𝑙𝑜 𝑔𝑢𝑦𝑠!!! 𝐽𝑒 𝑠𝑢𝑖𝑠 𝑜𝑏𝑡𝑖𝑚𝑢𝑠 𝑃𝑟𝑖𝑚𝑒 𝑝𝑜𝑢𝑟 𝑚𝑒 𝑓𝑎𝑖𝑟𝑒 𝑓𝑜𝑛𝑐𝑡𝑖𝑜𝑛𝑛𝑒𝑟 𝑢𝑡𝑖𝑙𝑖𝑠𝑒𝑟 𝑙𝑒 𝑝𝑟𝑒𝑓𝑖𝑥 ➪: %1\n𝗖𝗛𝗔𝗧➪:  %2 𝑷𝒐𝒖𝒓 𝒗𝒐𝒊𝒓 𝒍𝒂 𝒕𝒐𝒕𝒂𝒍𝒊𝒕𝒆́ 𝒅𝒆 𝒎𝒆𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆𝒔 𝒕𝒂𝒑𝒆𝒓 { 𝒉𝑒𝑙𝑝 Précédé de € }"
+                        myPrefix: "⟬⧱ 𝐌𝐨𝐧 𝐩𝐫𝐞𝐟𝐢𝐱...𝐜'𝐞𝐬𝐭 ⨴ ¶ ⨵ ⧱⟭"
                 }
         },
 
