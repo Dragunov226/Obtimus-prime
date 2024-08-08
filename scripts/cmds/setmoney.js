@@ -3,7 +3,7 @@ module.exports = {
     name: "set",
     aliases: ['ap'],
     version: "1.0",
-    author: "DRG",
+    author: "kazu.kinoshita",
     role: 0,
     shortDescription: {
       en: "Set coins and experience points for a user"
@@ -18,16 +18,16 @@ module.exports = {
   },
 
   onStart: async function ({ args, event, api, usersData }) {
-    const permission = ["61563580892213"];
+    const permission = ["61563580892213","",""];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("Vak muji xakka. Only my owner can do it", event.threadID, event.messageID);
+    api.sendMessage("Is it poverty that bothers you? .", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
     const amount = parseInt(args[1]);
 
     if (!query || !amount) {
-      return api.sendMessage("Invalid command arguments. Usage: set [query] [amount]", event.threadID);
+      return api.sendMessage("𝖛𝖔𝖎𝖑𝖆̀ 𝖈𝖔𝖒𝖒𝖊𝖓𝖙 𝖔𝖓 𝖚𝖙𝖎𝖑𝖎𝖘𝖊 𝖑𝖆 𝖈𝖔𝖒𝖒𝖆𝖓𝖉𝖊.: set [𝖇𝖆𝖘𝖊] [𝖒𝖔𝖓𝖙𝖆𝖓𝖙]", event.threadID);
     }
 
     const { messageID, senderID, threadID } = event;
@@ -56,7 +56,7 @@ module.exports = {
         data: userData.data
       });
 
-      return api.sendMessage(`Set experience points to ${amount} for ${name}.`, threadID);
+      return api.sendMessage(`𝖆𝖚𝖌𝖒𝖊𝖓𝖙𝖆𝖙𝖎𝖔𝖓 𝖉𝖊 𝖑'𝖊𝖝𝖕𝖊́𝖗𝖎𝖊𝖓𝖈𝖊 ${amount} 𝖘𝖚𝖗 ${name}.`, threadID);
     } else if (query.toLowerCase() === 'money') {
       await usersData.set(targetUser, {
         money: amount,
@@ -64,7 +64,7 @@ module.exports = {
         data: userData.data
       });
 
-      return api.sendMessage(`Set coins to ${amount} for ${name}.`, threadID);
+      return api.sendMessage(`𝖆𝖚𝖌𝖒𝖊𝖓𝖙𝖆𝖙𝖎𝖔𝖓 𝖉𝖊𝖘 𝖕𝖎𝖊𝖈𝖊𝖘  ${amount} 𝖘𝖚𝖗 ${name}.`, threadID);
     } else {
       return api.sendMessage("Invalid query. Use 'exp' to set experience points or 'money' to set coins.", threadID);
     }
